@@ -97,6 +97,7 @@ def main():
         if st.session_state.response:
             response = st.session_state.response
             # Display the main dish information
+            st.markdown("---")
             st.markdown(f"### Pare, your ulam is: <span style='color:#d3806f'>{response[0]['Dish']}</span>", unsafe_allow_html=True)
             st.markdown("---")
             st.markdown("#### Summary")
