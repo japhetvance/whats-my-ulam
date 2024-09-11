@@ -100,16 +100,16 @@ def main():
             st.markdown("---")
             st.markdown(f"### Pare, your ulam is: <span style='color:#d3806f'>{response[0]['Dish']}</span>", unsafe_allow_html=True)
             st.markdown("---")
-            st.markdown("#### Summary")
-            st.write(response[0]['Summary'])
+            st.markdown("#### Description")
+            st.write(response[0]['Description'])
             # Split ingredients by comma and format as unordered list
             st.markdown("---")
             ingredients = response[0]['Ingredients'].split(',')
             st.markdown("#### Ingredients")
             st.markdown("\n".join([f"- {ingredient.strip()}" for ingredient in ingredients]))
             st.markdown("---")
-            st.markdown("#### Description")
-            st.write(response[0]['Description'])
+            st.markdown("#### Summary")
+            st.write(response[0]['Summary'])
             st.markdown("---")
             
             # Display similar dishes as clickable items
