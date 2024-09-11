@@ -3,5 +3,6 @@ pandas
 python-dotenv
 openai
 langchain
+langchain-openai
 pinecone-client
 nltk
