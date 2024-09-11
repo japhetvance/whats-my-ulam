@@ -116,12 +116,12 @@ def main():
             st.markdown("#### Similar Dishes")
             for dish in response[1:]:
                 with st.expander(dish['Dish'], expanded=False):
-                    st.markdown(f"#### Dish Name: {dish['Dish']}")
-                    st.markdown("#### Description")
+                    st.markdown(f"#### {dish['Dish']}")
+                    st.markdown("##### Description")
                     st.write(dish['Description'])
-                    st.markdown("#### Ingredients")
+                    st.markdown("##### Ingredients")
                     st.write(dish['Ingredients'])
-                    st.markdown("#### Summary")
+                    st.markdown("##### Summary")
                     st.write(dish['Summary'])
         else:
             st.markdown("### No results found")
